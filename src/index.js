@@ -61,6 +61,10 @@ class Authenticate extends Component {
         });
     }
 
+    signout(){
+        this.userManager.signoutRedirect();
+    }
+
     render() {
         if (this.state.isAuthenticated) {
             return (this.props.children);
